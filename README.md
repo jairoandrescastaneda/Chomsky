@@ -5,16 +5,18 @@
 python >= 3.5
 
 **Como Ejecutarlo**
-
+```
 python3 main.py
+
+```
 
 **Ejemplo de Ejecucion**
 
 primero nos solicita las variables no terminales y terminales debemos digitarlas usando solamente "," para
 separalas
 
-![imagen de la primera parte]
-(http://i.prntscr.com/aFE96vWwRnKfB7URMG-yBg.png)
+
+![](http://i.prntscr.com/aFE96vWwRnKfB7URMG-yBg.png)
 
 digitamos la cantidad de regla por variable no terminal  y vamos digitando su respectiva regla
 es importante digita la regla con la palabra tal como se escribio al principio
