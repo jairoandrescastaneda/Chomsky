@@ -21,14 +21,13 @@ separalas
 digitamos la cantidad de regla por variable no terminal  y vamos digitando su respectiva regla
 es importante digita la regla con la palabra tal como se escribio al principio
 
-![imagen de la segunda parte]
-(http://i.prntscr.com/9Hb0fcI0SkW4UOQmSANvjw.png)
 
+![](http://i.prntscr.com/9Hb0fcI0SkW4UOQmSANvjw.png)
 luego digitamos la variable inicial , es importante escribir la variable tal como la hemos 
 guardado en nuestras variables no terminales
 
-![imagen segunda parte]
-(http://i.prntscr.com/ObnpImekSkGrd7dGD_1UXw.png)
+
+![](http://i.prntscr.com/ObnpImekSkGrd7dGD_1UXw.png)
 
 **Resultado**
 
