@@ -32,6 +32,14 @@ guardado en nuestras variables no terminales
 **Resultado**
 
 al final el programa dara unas palabras generadas usando el siguiente formato
+
+```
 noterminal =>[[noterminal,noterminal],[noterminal]]
+```
+
 ejm
+
+```
 A=>BC es equivalente a A=>[[B,C]]
+
+```
