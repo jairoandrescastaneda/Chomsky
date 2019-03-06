@@ -71,7 +71,7 @@ def formaNormalChomsky():
     generarReglaTerminal()
 
     for posicion in range(0, tamanionoTerminales):
-        print(posicion)
+        
         reglas = nodosNoterminales[posicion].reglas
         for regla in reglas:
 
@@ -173,8 +173,20 @@ def apilarNodosTerminales(variableTerminales):
 def imprimirdatos():
     print("Reglas Generadas : ")
     for noterminal in nodosNoterminales:
+        reglas = noterminal.reglasPrima
+        reglasOput = noterminal.nombre+"=>"
+        for regla in reglas:
+            reglasOput += str(regla[0])
+            
+            try:
+                reglasOput+=str(regla[1])
+                reglasOput+="/"
+            except IndexError:
+                reglasOput+="/"
 
-        print(noterminal.nombre+"=> " + str(noterminal.reglasPrima))
+        print(reglasOput)
+
+        
 
 
 def generarLenguaje():

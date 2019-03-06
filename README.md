@@ -37,9 +37,15 @@ al final el programa dara unas palabras generadas usando el siguiente formato
 noterminal =>[[noterminal,noterminal],[noterminal]]
 ```
 
-ejm
+**ejm**
 
 ```
-A=>BC es equivalente a A=>[[B,C]]
+la salida del programa sera en formato 
+ejm
+A=>BC/
+C=>B1/
+B=>1/
+
+que esto son las reglas formalizadas
 
 ```
