@@ -16,8 +16,6 @@ variableInicial = None
 palabraProduccion = ""
 
 
-
-
 def solicitarDato():
     global variableInicial
     entradaTerminales = input(
@@ -62,7 +60,7 @@ def solicitarDato():
         break
 
         # ya se tendria las reglas referenciadas por instancias
-
+    encontrarUnitaria()
     formaNormalChomsky()
 
 
@@ -71,7 +69,7 @@ def formaNormalChomsky():
     generarReglaTerminal()
 
     for posicion in range(0, tamanionoTerminales):
-        
+
         reglas = nodosNoterminales[posicion].reglas
         for regla in reglas:
 
@@ -170,6 +168,18 @@ def apilarNodosTerminales(variableTerminales):
         nodosTerminales.append(nodoterminal)
 
 
+def encontrarUnitaria():
+    global nodosNoterminales
+    print('Variables unitariarias: ')
+    for n in nodosNoterminales:
+        reglasNodo = n.reglas
+        
+        for reglaNodo in reglasNodo:
+            if len(reglaNodo) == 1:
+                if isinstance(reglaNodo[0], NodonoTerminal):
+                    print(n.nombre+" =>"+str(reglaNodo))
+
+
 def imprimirdatos():
     print("Reglas Generadas : ")
     for noterminal in nodosNoterminales:
@@ -177,16 +187,14 @@ def imprimirdatos():
         reglasOput = noterminal.nombre+"=>"
         for regla in reglas:
             reglasOput += str(regla[0])
-            
+
             try:
-                reglasOput+=str(regla[1])
-                reglasOput+="/"
+                reglasOput += str(regla[1])
+                reglasOput += "/"
             except IndexError:
-                reglasOput+="/"
+                reglasOput += "/"
 
         print(reglasOput)
-
-        
 
 
 def generarLenguaje():
